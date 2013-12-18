@@ -15,7 +15,7 @@ verification_output_filename = 'verification_output.csv'
 
 title_threshold = 0.5
 body_threshold = 0.9
-support_threshold = 10
+support_threshold = 1
 
 client = MongoClient()
 db = client.kaggle_facebook
