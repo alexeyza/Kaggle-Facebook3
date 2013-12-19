@@ -14,7 +14,7 @@ output_filename = 'output.csv'
 verification_output_filename = 'verification_output.csv'
 
 title_threshold = 0.5
-body_threshold = 0.9
+body_threshold = 0.4
 support_threshold = 1
 
 client = MongoClient()
