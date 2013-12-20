@@ -8,10 +8,8 @@ import os
 
 train_filename = 'pre_process_train.csv'
 test_filename = 'pre_process_test.csv'
-pkl_title_filename = 'title_tag_dict_cache.pkl'
-pkl_body_filename = 'body_tag_dict_cache.pkl'
 output_filename = 'output.csv'
-verification_output_filename = 'verification_output.csv'
+f1_output_filename = 'f1_output.csv'
 
 title_threshold = 0.5
 body_threshold = 0.4
@@ -139,7 +137,7 @@ def test_model(train_filename):
     print 'testing...'
     test_file_object = csv.reader(open('..'+os.path.sep+'csv'+os.path.sep+train_filename, 'rb'))
     header = test_file_object.next()
-    output_file = csv.writer(open('..'+os.path.sep+'csv'+os.path.sep+output_filename, "wb"),quoting=csv.QUOTE_NONNUMERIC)
+    output_file = csv.writer(open('..'+os.path.sep+'csv'+os.path.sep+f1_output_filename, "wb"),quoting=csv.QUOTE_NONNUMERIC)
     output_file.writerow(['Id','F1 score'])
     max_to_test = 100
     f1_mean = 0
