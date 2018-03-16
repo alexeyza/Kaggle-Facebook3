@@ -1,6 +1,6 @@
 # Kaggle Facebook Recruiting III - Keyword Extraction
 
-This repository includes my scripts for the Kaggle [Facebook Recruiting III - Keyword Extraction](http://www.kaggle.com/c/facebook-recruiting-iii-keyword-extraction) competition. My solution is based on [Alex Minnaar's blog post](http://alexminnaar.com/2013/09/14/facebook-recruiting-iii-keyword-extraction-part-1/).
+This repository includes my scripts for the Kaggle [Facebook Recruiting III - Keyword Extraction](http://www.kaggle.com/c/facebook-recruiting-iii-keyword-extraction) competition. My solution is based on [Alex Minnaar's blog post](http://alexminnaar.com/tag/kaggle-competitions.html).
 
 ## Instructions
 * The `model` folder includes the following scripts: `pre_process.py` which prepares the training and testing files, `classification_model_mongodb.py` which creates association rules and creates the prediction output.
